@@ -27,17 +27,22 @@
         </div>
         <button onclick="calcola()">Calcola</button>
         
-        <div id="result">
-            <h2>Risultati:</h2>
-            <p id="volumeTotale">Volume totale da generare: </p>
-            <p id="volumeContriuzione">Volume da generare con contribuzione giochi: </p>
-            <p id="costoStimato">Costo stimato SLOT per completamento rollover: </p>
-            <p id="rischioAlto">Livello Rischio Alto: </p>
-            <p id="guadagnoAlto">Guadagno atteso (Alto): </p>
-            <p id="rischioMedio">Livello Rischio Medio: </p>
-            <p id="guadagnoMedio">Guadagno atteso (Medio): </p>
-            <p id="rischioBasso">Livello Rischio Basso: </p>
-            <p id="guadagnoBasso">Guadagno atteso (Basso): </p>
+        <div id="result" class="results-container">
+            <div class="result-column">
+                <h2>Rischio Alto</h2>
+                <p id="rischioAlto">Livello Rischio: </p>
+                <p id="guadagnoAlto">Guadagno atteso: </p>
+            </div>
+            <div class="result-column">
+                <h2>Rischio Medio</h2>
+                <p id="rischioMedio">Livello Rischio: </p>
+                <p id="guadagnoMedio">Guadagno atteso: </p>
+            </div>
+            <div class="result-column">
+                <h2>Rischio Basso</h2>
+                <p id="rischioBasso">Livello Rischio: </p>
+                <p id="guadagnoBasso">Guadagno atteso: </p>
+            </div>
         </div>
     </div>
 
