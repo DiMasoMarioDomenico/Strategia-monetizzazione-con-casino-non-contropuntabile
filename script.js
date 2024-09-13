@@ -9,13 +9,13 @@ function calcola() {
     var costoStimato = volumeTotale * (1 - rtp);
 
     var rischioAlto = volumeTotale * 0.1;
-    var guadagnoAlto = volumeContribuzione - rischioAlto;
+    var guadagnoAlto = rischioAlto - costoStimato;
 
     var rischioMedio = volumeTotale * 0.15;
-    var guadagnoMedio = volumeContribuzione - rischioMedio;
+    var guadagnoMedio = rischioMedio - costoStimato;
 
     var rischioBasso = volumeTotale * 0.2;
-    var guadagnoBasso = volumeContribuzione - rischioBasso;
+    var guadagnoBasso = rischioBasso - costoStimato;
 
     document.getElementById("volumeTotale").innerHTML = "Volume totale da generare: €" + volumeTotale.toFixed(2);
     document.getElementById("volumeContribuzione").innerHTML = "Volume da generare con contribuzione giochi: €" + volumeContribuzione.toFixed(2);
